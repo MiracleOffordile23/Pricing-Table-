@@ -1,0 +1,115 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(to right, #6366F1, #06B6D4);
+  border-radius: 20px;
+}
+
+h1{
+  color: black;
+  text-align: center;
+  font-weight: 50px;
+  font-size: 35px;
+  justify-content: center;
+}
+
+
+
+#paragraph{
+  text-align: center;
+  justify-content: center;
+  font-size: 20px;
+  color: black;
+}
+
+main{
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+margin-left: 150px;
+margin-right: 150px;
+}
+
+#container{
+  display: grid;
+  grid-template-columns: repeat(3,  1fr);
+  gap: 20px;
+  background-color: white;
+  border: 20px;
+}
+
+.article{
+  background-color: rgb(223, 230, 236);
+  border:5px;
+  border-color: white;
+  border-radius: 20px;
+  padding: 15px;
+    border-style: solid;
+}
+
+.article:hover{
+  background-color: rgb(243, 67, 126);
+   transform: translateY(-9px);
+   transition: background-color 0.5s ease;
+}
+
+
+.article:has(input[name="plan"]:checked) {
+  background-color: rgb(243, 67, 126);
+}
+
+#popular{
+  font-style: oblique;
+  text-align: center;
+  font-size: 13px;
+  background-color: rgb(248, 241, 241);
+   border-radius: 30px;
+   padding: 2px;
+}
+input[type= "radio"]{
+  transform: scale(1.5);
+  margin: 10px;
+  cursor: pointer;
+  accent-color: #6366F1;
+}
+
+.button-container {
+  grid-column: 1 / -1;
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#message {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  color: #6366F1;
+}
+
+#button {
+  display: inline-block;
+  padding: 15px 60px;
+  background-color: #6366F1;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+#button:hover {
+  transform: translateY(-3px);
+  background-color: rgb(243, 67, 126);
+}
+
+
+i{
+  font-size: 15px;
+}
+
+strong{
+  font-size: 40px;
+}
